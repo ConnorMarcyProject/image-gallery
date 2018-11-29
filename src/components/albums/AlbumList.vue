@@ -8,10 +8,11 @@
 </template>
 
 <script>
-import Album from './Album'; 
+import Album from './Album';
+
 export default {
   props: {
-    album: Array
+    albums: Array
   }, 
   components: {
     Album
