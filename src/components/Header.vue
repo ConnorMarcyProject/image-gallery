@@ -1,6 +1,7 @@
 <template>
     <header>
-        <p> I'm the header!</p>
+        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/albums"> Albums</RouterLink>
     </header>
 </template>
 
