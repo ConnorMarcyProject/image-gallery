@@ -20,5 +20,17 @@ export default {
 </script>
 
 <style>
-
+li {
+  list-style: none;
+}
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
 </style>
