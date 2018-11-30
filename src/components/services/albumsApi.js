@@ -58,7 +58,7 @@ const albums = [
         url: 'https://files.slack.com/files-pri/T6FCZF1HR-FEFMBQY3C/cub-halloween.png'
       },
       {
-        title: 'The Force is Strong with this one',
+        title: 'The Force is Strong With This One',
         url: 'https://cdn.builtincolorado.com/sites/www.builtincolorado.com/files/styles/ckeditor_optimize/public/inline-images/apto-halloween-dog-Colorado.JPEG'
       }
     ]
