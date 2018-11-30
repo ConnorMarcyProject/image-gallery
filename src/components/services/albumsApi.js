@@ -24,6 +24,13 @@ const albums = [
         title: 'Buddy Dogs',
         url: 'https://www.kevinandamanda.com/whatsnew/wp-content/uploads/2014/12/miley-howie-boston-terriers-puppies-dogs-christmas-dressed-up-santa-reindeer-2014-01.jpg'
       },
+      {
+        title: 'Sleeping Santas',
+        url: 'https://barkpost.com/wp-content/uploads/2014/12/dogs-christmas.jpg'
+      },
+      { title: 'Party Dogs',
+        url: 'https://images.baxterboo.com/global/images/customerimages/large/christmas-tartan-dog-collar-and-bow-tie-22168.jpg'
+      }
     ]
   },
   {
@@ -50,6 +57,10 @@ const albums = [
         title: 'Spooky Cub Bear',
         url: 'https://files.slack.com/files-pri/T6FCZF1HR-FEFMBQY3C/cub-halloween.png'
       },
+      {
+        title: 'The Force is Strong with this one',
+        url: 'https://cdn.builtincolorado.com/sites/www.builtincolorado.com/files/styles/ckeditor_optimize/public/inline-images/apto-halloween-dog-Colorado.JPEG'
+      }
     ]
   },
   {
@@ -80,6 +91,10 @@ const albums = [
         title: 'Sexy Dogs',
         url: 'https://ruinmyweek.com/wp-content/uploads/2016/03/the-best-funny-pictures-Dogs-in-Pantyhose-2.png'
       },
+      {
+        title: 'Loveable Frank',
+        url: 'https://files.slack.com/files-pri/T6FCZF1HR-FDZSYEGA2/image_from_ios.jpg'
+      }
     ]
   }
 ];
