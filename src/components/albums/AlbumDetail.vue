@@ -7,10 +7,15 @@
     </p>
     <div v-if="showModal" class="modal">
         <div class="content">
-        Please add an image
+        <form @submit.prevent="handleAdd(image)"> 
+      <label>
+      <span>Image</span>
+      <input v-model="image.url" required>
+      </label>
+      <button> Add </button>
+      </form>
       <button @click="showModal = false"> Close </button>
-        <AddImage/>
-        </div>
+    </div>
     </div>
     <Thumbnails :images="album.images" />
   </section>
@@ -19,21 +24,29 @@
 <script>
 import albumsApi from '../services/albumsApi';
 import Thumbnails from './Thumbnails';
-import AddImage from './AddImage'; 
+
 
 export default {
   data() {
     return {
       album: null,
-      showModal: false 
+      showModal: false,
+      image: {
+        url: '',
+      }
     };
   },
   components: {
     Thumbnails,
-    AddImage
   },
   created(){
     this.album = albumsApi.getAlbum(this.$route.params.id); 
+  },
+  methods: {
+    handleAdd() {
+      this.album.images.push(this.image);
+      this.showModal = false;
+    }
   }
 };
 </script>

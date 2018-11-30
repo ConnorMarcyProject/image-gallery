@@ -1,7 +1,7 @@
 <template>
   <section>
     <h2>Albums</h2>
-    <AlbumList :albums="albums"/>
+    <AlbumList v-bind:albums="albums"/>
   </section>
 </template>
 
