@@ -7,6 +7,10 @@
         <div id="album-id">
             <RouterLink to="/albums"> Albums</RouterLink>
         </div>
+        <br />
+        <div id="about-us">
+            <RouterLink to="/aboutUs">About Us</RouterLink>
+        </div>
     </header>
 </template>
 
