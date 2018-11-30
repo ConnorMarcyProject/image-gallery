@@ -1,5 +1,5 @@
 <template>
   <section>
-    I am the Home Component
+    Welcome to the Best Festive Dog Images on the Internet. 
   </section>
 </template>

@@ -18,7 +18,7 @@
       </label>
       <button> Add </button>
       </form>
-      <button @click="showModal = false"> Close </button>
+      <button @click="showModal = false"> Cancel </button>
     </div>
     </div>
     <Thumbnails :images="album.images" />

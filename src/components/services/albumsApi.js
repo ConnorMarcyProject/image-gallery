@@ -1,3 +1,8 @@
+// const json = window.localStorage.getItem('albums'); 
+// const saveAlbums = json ? JSON.parse(json) : saveAlbums; 
+// function save() {
+//   window.localStorage.setItem('albums, albums'); 
+// }
 const albums = [
   {
     id: 'christmas-dog',
@@ -86,10 +91,11 @@ export default {
   getAlbum(id) {
     return albums.find(album => album.id === id);
   },
-  add(album) {
-    album.images = [];
-    albums.push(album); 
-    return album;
+  add(albumImage) {
+    albumImage.images = [];
+    albums.push(albumImage); 
+    // save(); 
+    return albumImage;
 
   }
 };
