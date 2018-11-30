@@ -9,6 +9,10 @@
         <div class="content">
         <form @submit.prevent="handleAdd(image)"> 
       <label>
+        <span> Title </span>
+        <input type="text" v-model="image.title">
+      </label>
+      <label>
       <span>Image</span>
       <input v-model="image.url" required>
       </label>
@@ -32,7 +36,8 @@ export default {
       album: null,
       showModal: false,
       image: {
-        url: '',
+        title: '', 
+        url: ''
       }
     };
   },
@@ -43,7 +48,7 @@ export default {
     this.album = albumsApi.getAlbum(this.$route.params.id); 
   },
   methods: {
-    handleAdd() {
+    handleAdd() { 
       this.album.images.push(this.image);
       this.showModal = false;
     }
