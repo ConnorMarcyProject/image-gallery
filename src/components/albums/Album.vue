@@ -12,3 +12,9 @@ export default {
 }; 
 </script>
 
+<style scoped>
+li {
+  border: 2px solid maroon;
+  border-radius: 5px;
+}
+</style>

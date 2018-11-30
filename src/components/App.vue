@@ -2,7 +2,6 @@
   <div id="app">
     <Header />
     <main>
-      Hello World
       <RouterView></RouterView>
     </main>
   </div>

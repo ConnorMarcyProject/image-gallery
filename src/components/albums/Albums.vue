@@ -20,3 +20,9 @@ export default {
   }
 }; 
 </script>
+
+<style>
+h2 {
+  color: maroon;
+}
+</style>

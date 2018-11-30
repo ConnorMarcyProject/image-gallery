@@ -23,6 +23,14 @@ export default {
 li {
   list-style: none;
 }
+
+h4 {
+  background: maroon;
+  color: white;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
 ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
