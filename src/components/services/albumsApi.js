@@ -38,7 +38,7 @@ const albums = [
         url: 'https://i.imgur.com/3r6AA4c.jpg'
       },
       {
-        title: 'Halloween Spooky Baby Puppy Cuddly Witch',
+        title: 'Spooky Puppy Cuddly Witch',
         url: 'https://d3pz1jifuab5zg.cloudfront.net/2015/10/28105421/halloween-dog-puppy-witch-shutterstock_734121529.jpg'
       },
       {
@@ -85,5 +85,11 @@ export default {
   },
   getAlbum(id) {
     return albums.find(album => album.id === id);
+  },
+  add(album) {
+    album.images = [];
+    albums.push(album); 
+    return album;
+
   }
 };
