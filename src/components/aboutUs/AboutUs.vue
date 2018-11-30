@@ -1,5 +1,10 @@
 <template>
-  <h2>Connor</h2>
+  <div>
+    <h2>Connor</h2>
+    <p></p>
+    <h2>Marcy</h2>
+    <p></p>
+  </div>
 </template>
 
 <script>

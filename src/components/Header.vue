@@ -9,7 +9,7 @@
         </div>
         <br />
         <div id="about-us">
-            <RouterLink to="/about-us">About Us</RouterLink>
+            <RouterLink to="/aboutUs">About Us</RouterLink>
         </div>
     </header>
 </template>

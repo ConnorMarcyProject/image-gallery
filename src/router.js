@@ -10,7 +10,7 @@ export default new VueRouter ({
     { path: '/', component: Home },
     { path: '/albums', component: Albums },
     { path: '/albums/:id', component: AlbumDetail },
-    { path: '/aboutUs/:id', component: AboutUs },
+    { path: '/aboutUs', component: AboutUs },
     { path:'*', redirect: '/' }
   ]
 }); 
