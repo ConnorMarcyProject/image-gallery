@@ -8,14 +8,19 @@
     <Modal v-if="showModal" :onClose="() => showModal = false">
         <AddImage :onAdd ="handleAdd"/>
     </Modal>
-    <Thumbnails :images="album.images" />
+    <nav> 
+      <Routerlink to="./thumbnail"> Thumbnail </Routerlink>
+      <Routerlink to="./list"> List </Routerlink>
+      <Routerlink to="./gallery"> Gallery </Routerlink>
+    </nav>
+    <RouterView :images="album.images"> Default View </RouterView>
   </section>
 </template>
 
 <script>
 import albumsApi from '../services/albumsApi';
 import Modal from '../../shared/Modal';
-import Thumbnails from './Thumbnails';
+import Thumbnails from './images/Thumbnails';
 import AddImage from './images/AddImage'; 
 
 
