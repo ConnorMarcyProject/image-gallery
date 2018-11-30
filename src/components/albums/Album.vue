@@ -1,6 +1,10 @@
 <template>
   <li>
     <RouterLink :to="`/albums/${album.id}`">{{album.title}}</RouterLink>
+    <h2>asdf</h2>
+    <p>asdf</p>
+    <h2>fdsa</h2>
+    <p>fdsafa</p>
   </li>
 </template>
 
