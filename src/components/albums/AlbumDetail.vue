@@ -32,11 +32,14 @@ export default {
     AddImage
   },
   created(){
-    this.album = albumsApi.getAlbum(this.$route.params.id); 
+    this.album = albumsApi.getAlbum(this.$route.params.id);
+    if(!this.album) {
+      this.$router.push('/albums');
+    }
   },
   methods: {
-    handleAdd() { 
-      this.album.images.push(this.image);
+    handleAdd(image) { 
+      this.album.images.push(image);
       this.showModal = false;
     }
   }
