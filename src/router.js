@@ -12,8 +12,21 @@ export default new VueRouter ({
   routes: [
 
     { path: '/', component: Home },
-    { path: '/albums', component: Albums },
-    { path: '/albums/:id', component: AlbumDetail },
+    {
+      path: '/albums', 
+      component: Albums 
+    },
+    { path: '/albums/new', component: NewAlbum },
+    { 
+      path: '/albums/:id', 
+      component: AlbumDetail, 
+      children: [
+        { path: 'thumbnail', component: Thumbnails }, 
+        { path: 'list', component: ListView }, 
+        { path: 'gallery', component: GalleryView },
+        { path: '', redirect: 'thumbnail' },
+      ] 
+    },
     { path: '/aboutUs', component: AboutUs },
     { path:'*', redirect: '/' }
   ]

@@ -9,9 +9,9 @@
         <AddImage :onAdd ="handleAdd"/>
     </Modal>
     <nav> 
-      <Routerlink to="./thumbnail"> Thumbnail </Routerlink>
-      <Routerlink to="./list"> List </Routerlink>
-      <Routerlink to="./gallery"> Gallery </Routerlink>
+      <RouterLink to="./thumbnail"> Thumbnail </RouterLink>
+      <RouterLink to="./list"> List </RouterLink>
+      <RouterLink to="./gallery"> Gallery </RouterLink>
     </nav>
     <RouterView :images="album.images"> Default View </RouterView>
   </section>
@@ -20,7 +20,7 @@
 <script>
 import albumsApi from '../services/albumsApi';
 import Modal from '../../shared/Modal';
-import Thumbnails from './images/Thumbnails';
+// import Thumbnails from './images/Thumbnails';
 import AddImage from './images/AddImage'; 
 
 
@@ -33,7 +33,7 @@ export default {
   },
   components: {
     Modal,
-    Thumbnails,
+    // Thumbnails,
     AddImage
   },
   created(){

@@ -2,10 +2,10 @@
   <Modal :onClose="() => this.$router.back()">
       <section>
         <h3>Gallery View</h3>
-        {{selectedIndex}}
+        <!-- {{selectedIndex}} -->
         <p>
           <button @click="setIndex(-1)">&lt;</button>
-          {{color}}
+          <img v-bind:src="image.url">
           <button @click="setIndex(1)">&gt;</button>
         </p>
       </section>
@@ -13,11 +13,12 @@
 </template>
 
 <script>
-import Modal from '../../shared/Modal';
+import Modal from '../../../shared/Modal';
 
 export default {
   data() {
     return {
+      // images: Array,
       selectedIndex: 0
     };
   },
@@ -28,8 +29,8 @@ export default {
     Modal
   },
   computed: {
-    albums() {
-      return this.albums[this.selectedIndex];
+    image() {
+      return this.images[this.selectedIndex];
     }
   },
   methods: {
@@ -47,5 +48,8 @@ export default {
 </script>
 
 <style>
-
+img {
+  width: 200px; 
+  height: 200px; 
+}
 </style>
