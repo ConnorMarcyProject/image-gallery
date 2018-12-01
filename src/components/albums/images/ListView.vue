@@ -1,11 +1,13 @@
 <template>
   <section>
     <h3>List View</h3>
-    <!-- <p>There are {{images.length}} image(s)</p>
+    <p>There are {{images.length}} image(s)</p>
     <p v-for="image in images"
       :image="image"
-      :key="image.title"> {{image.title}}
-    </p> -->
+      :key="image.title"> 
+      <img v-bind:src="image.url"/>
+      {{image.title}}
+    </p>
   </section>
 </template>
 
