@@ -6,16 +6,20 @@
       <button @click="showModal = true"> Add a new Image </button>
     </p>
     <Modal v-if="showModal" :onClose="() => showModal = false">
-        <AddImage :onAdd ="handleAdd"/>
+        <AddImage :onAdd="handleAdd"/>
     </Modal>
-    <Thumbnails :images="album.images" />
+    <nav> 
+      <RouterLink to="./thumbnail"> Thumbnail </RouterLink>
+      <RouterLink to="./list"> List </RouterLink>
+      <RouterLink to="./gallery"> Gallery </RouterLink>
+    </nav>
+    <RouterView :images="album.images"> Default View </RouterView>
   </section>
 </template>
 
 <script>
 import albumsApi from '../services/albumsApi';
-import Modal from '../../shared/Modal';
-import Thumbnails from './Thumbnails';
+import Modal from '../../shared/Modal'; 
 import AddImage from './images/AddImage'; 
 
 
@@ -24,21 +28,26 @@ export default {
     return {
       album: null,
       showModal: false,
+      image: {} 
     };
   },
   components: {
     Modal,
-    Thumbnails,
     AddImage
   },
   created(){
-    this.album = albumsApi.getAlbum(this.$route.params.id); 
+    this.album = albumsApi.getAlbum(this.$route.params.id);
+    if(!this.album) {
+      this.$router.push('/albums');
+    }
   },
   methods: {
-    handleAdd() { 
-      this.album.images.push(this.image);
+    handleAdd(image) { 
+      albumsApi.addImage(this.album.id, image); 
       this.showModal = false;
-    }
+      console.log(this.image);  
+    } 
+    
   }
 };
 </script>

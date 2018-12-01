@@ -16,11 +16,11 @@
 import FormControl from '../../../shared/FormControl'; 
 
 export default {
-  date() {
+  data() {
     return {
       image: {
         title: '', 
-        url:''
+        url: ''
       }
     };
   }, 
@@ -29,7 +29,7 @@ export default {
   }, 
   components: {
     FormControl
-  }
+  }, 
 
 };
 </script>
