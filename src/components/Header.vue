@@ -31,22 +31,39 @@ header {
 #home-id {
     background: white;
     padding: 10px;
+    border: 2px solid maroon;
     border-radius: 5px;
 }
 
 #home-id:hover {
     background: lightgray;
-    transition: .5s;
-}
-
-#album-id:hover {
-    background: lightgray;
-    transition: .5s;
+    border: 3px solid maroon;
+    transition: .3s
 }
 
 #album-id {
     background: white;
     padding: 10px;
+    border: 2px solid maroon;
     border-radius: 5px;
+}
+
+#album-id:hover {
+    background: lightgray;
+    border: 3px solid maroon;
+    transition: .3s;
+}
+
+#about-us {
+    background: white;
+    padding: 10px;
+    border: 2px solid maroon;
+    border-radius: 5px;
+}
+
+#about-us:hover {
+    background: lightgray;
+    border: 3px solid maroon;
+    transition: .3s;
 }
 </style>
