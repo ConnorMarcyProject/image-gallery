@@ -17,6 +17,7 @@ function save() {
   window.localStorage.setItem('albums', JSON.stringify(albums)); 
 }
 
+
 export default {
   getAlbums() {
     return albums;
@@ -27,6 +28,7 @@ export default {
   add(album) {
     album.id = shortid.generate(); 
     album.images = [];
+    albums.images.push(album.images); 
     albums.push(album); 
     save(); 
     return album;
