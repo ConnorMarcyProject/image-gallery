@@ -27,11 +27,15 @@ export default {
   },
   add(album) {
     album.id = shortid.generate(); 
-    album.images = [];
-    albums.images.push(album.images); 
+    album.images = []; 
     albums.push(album); 
     save(); 
     return album;
-
+  },
+  addImage(id, image) {
+    const album = this.getAlbum(id);
+    album.images.push(image);
+    save(); 
+    return album; 
   }
 };
