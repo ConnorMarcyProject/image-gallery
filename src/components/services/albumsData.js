@@ -68,8 +68,8 @@ export default [
         url: 'http://en.bcdn.biz/Images/2016/10/31/c394f46b-0b33-42c3-94e5-3568ab57aa29.jpg'
       },
       {
-        title: 'Sucked in Dog',
-        url: 'https://i.ytimg.com/vi/H8zXii3kOBI/maxresdefault.jpg'
+        title: 'Buck Teeth Dog',
+        url: 'https://m.media-amazon.com/images/I/61bueMdnn0L._AC_UF1000,1000_QL80_.jpg'
       },
       {
         title: 'Derp Nose',

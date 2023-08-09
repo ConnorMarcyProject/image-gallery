@@ -14,7 +14,8 @@ else {
 }
 
 function save() {
-  window.localStorage.setItem('albums', JSON.stringify(albums)); 
+  window.localStorage.setItem('albums', JSON.stringify(albums));
+  console.log('here');
 }
 
 
