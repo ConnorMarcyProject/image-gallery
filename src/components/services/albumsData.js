@@ -14,11 +14,11 @@ export default [
       },
       {
         title: 'Coffee Dog',
-        url: 'https://3milliondogs.com/blog-assets-two/2014/12/new-christmas-dog-wallpaper.jpg'
+        url: 'https://i2-prod.mirror.co.uk/incoming/article12935805.ece/ALTERNATES/s1200c/0_Sausage-dog-cafe.jpg'
       },
       {
-        title: 'Buddy Dogs',
-        url: 'https://www.kevinandamanda.com/whatsnew/wp-content/uploads/2014/12/miley-howie-boston-terriers-puppies-dogs-christmas-dressed-up-santa-reindeer-2014-01.jpg'
+        title: 'Cute Present',
+        url: 'https://www.rd.com/wp-content/uploads/2022/12/GettyImages-899520544-scaled.jpg'
       },
       {
         title: 'Sleeping Santas',
@@ -46,12 +46,12 @@ export default [
         url: 'https://i.imgur.com/3r6AA4c.jpg'
       },
       {
-        title: 'Spooky Puppy Cuddly Witch',
-        url: 'https://d3pz1jifuab5zg.cloudfront.net/2015/10/28105421/halloween-dog-puppy-witch-shutterstock_734121529.jpg'
+        title: 'Hot Dog',
+        url: 'https://hips.hearstapps.com/hmg-prod/images/dog-halloween-costumes-1665013602.jpeg?crop=0.669xw:1.00xh;0.252xw,0&resize=640:*'
       },
       {
         title: 'Spooky Cub Bear',
-        url: 'https://files.slack.com/files-pri/T6FCZF1HR-FEFMBQY3C/cub-halloween.png'
+        url: 'https://i.pinimg.com/originals/31/d3/38/31d33818a076187448849be4f14d6145.jpg'
       },
       {
         title: 'The Force is Strong With This One',
@@ -76,8 +76,8 @@ export default [
         url: 'https://i.redd.it/ojdw44rdr15y.jpg'
       },
       {
-        title: 'Taxi Dog',
-        url: 'https://a.spirited.media/wp-content/uploads/sites/2/2015/01/so-where-can-i-take-ya-taxi-dog.jpg'
+        title: 'Help I\'m stuck!',
+        url: 'https://i2-prod.mirror.co.uk/incoming/article27932447.ece/ALTERNATES/n615/0_PAY-GREAT-DANE-OPTICAL-ILLUSION.jpg'
       },
       {
         title: 'Can I Has Ball?',
@@ -89,7 +89,7 @@ export default [
       },
       {
         title: 'Loveable Frank',
-        url: 'https://files.slack.com/files-pri/T6FCZF1HR-FDZSYEGA2/image_from_ios.jpg'
+        url: 'https://hips.hearstapps.com/hmg-prod/images/funny-dog-captions-1563456605.jpg'
       }
     ]
   }
